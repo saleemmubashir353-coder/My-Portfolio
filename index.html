@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mubashir Saleem — Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.section').forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 150) {
+      sec.classList.add('visible');
+    }
+  });
+});
+</script>
+<body>
+  <header class="site-header animate-fade-down">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">MS</div>
+        <div class="brand-text">
+          <div class="name">Mubashir Saleem</div>
+          <div class="role">Frontend Developer</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO Section -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-overlay"><img src="image.png" width="160px" alt=""></div>
+    <div class="container hero-inner">
+      <div class="hero-copy animate-slide-up">
+        <div class="eyebrow">Hello</div>
+        <h1>I'm <span class="accent">Mubashir Saleem</span></h1>
+        <p class="lead">Professional Frontend Developer — creating responsive, accessible & visually stunning web experiences using HTML and CSS.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contact">Hire Me</a>
+          <a class="btn btn-ghost" href="#experience">Experience</a>
+        </div>
+      </div>
+
+      <div class="hero-stats animate-fade-up">
+        <div class="stat">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Months Internship</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">50+</div>
+          <div class="stat-label">UI Components</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Focused Goal</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section animate-fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m a passionate Frontend Developer focused on crafting clean, responsive designs using semantic HTML and modern CSS. I believe in minimalism, smooth UI, and performance.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt animate-fade-up">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="chip">HTML5</div>
+          <div class="chip">CSS3 (Flexbox & Grid)</div>
+          <div class="chip">Responsive Design</div>
+          <div class="chip">Animations</div>
+          <div class="chip">UI/UX Design</div>
+          <div class="chip">Accessibility</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section animate-fade-up">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="exp-grid">
+          <article class="exp-card">
+            <h3>Frontend Intern</h3>
+            <p>Worked on UI layouts and animations using pure HTML/CSS. Enhanced site performance and accessibility.</p>
+          </article>
+
+          <article class="exp-card">
+            <h3>Safety Coordinator — Shell Pump</h3>
+            <p>Developed team coordination and attention to detail — skills that translate directly to clean, efficient code.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+<section class="contact section" id="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-subtitle">I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+    <div class="contact-card">
+      <h3>Contact Information</h3>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-envelope"></i> saleemmubashir354@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> +92 326 5825731</li>
+        <li><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</li>
+      </ul>
+
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:saleemmubashir354@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer animate-fade-up">
+    <div class="container footer-inner">
+      <div>© <strong>Mubashir Saleem</strong> — Frontend Developer</div>
+      <div class="muted">Designed with love • #121212 • #4f4747 • #ff6f47</div>
+    </div>
+  </footer>
+
+  <script>
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.site-header');
+  if (window.scrollY > 100) {
+    header.style.background = 'rgba(18, 18, 18, 0.6)';
+    header.style.backdropFilter = 'blur(6px)';
+  } else {
+    header.style.background = 'transparent';
+    header.style.backdropFilter = 'none';
+  }
+});
+</script>
+
+</body>
+</html>
